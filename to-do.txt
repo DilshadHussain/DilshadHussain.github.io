@@ -1,0 +1,3 @@
+message recieved at a phone number should be sent to a group
+message received through email should be sent to a group
+send form data to email id or whatsapp group
