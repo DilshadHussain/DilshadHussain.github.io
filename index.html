@@ -2,20 +2,90 @@
 <html>
 <head>
     <title>Adarsh Laboratory</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
     <div id="container" class="container">
-        <div id="header" class="header">
-            <div id="logo" class="logo">
+        <!-- Banner/First page Start -->
+        <div id="banner" class="banner">
+            <!-- <div id="logo" class="logo">
                 <img src="C:\Users\Dilshad Hussain\Documents\Softs\ADL\image\Adarsh Logo logo.png">
-            </div>
+            </div> -->
             <div id="brand" class="brand">
-                <img src="C:\Users\Dilshad Hussain\Documents\Softs\ADL\image\Adarsh Logo.jpg"> 
+                <section id="banner">
+                    <img src="image\Adarsh Logo updated.png" class="logo"> 
+                    <div class="banner-text">
+                        <!-- <h1>Free Home Collection</h1>
+                        <p>please call 8897476763 to book appointment</p> -->
+                        <div class="banner-btn">
+                            <!-- <a href="#"><span></span> for Appointment</a>
+                            <a href="#"><span></span>Get in touch with us</a> -->
+                            <h1>For appointment please reach out to us on +91 7061 615 909</h1>
+                        </div>
+                    </div>
+
+                </section>
             </div>
             <div id="pic">
 
             </div>
         </div>
-        <div id="body" class="body">
+        <!-- Banner/First page end -->
+
+
+        <!-- Navigation Start -->
+        <!-- <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Appointment</a></li>
+                    <li><a href="#">Get in touch with us</a></li>
+                    <li><a href="#">Meet Us</a></li>
+                    <li><a href="#">Social Media</a></li>
+                </ul>
+            </nav>
+        </div> -->
+        <!-- <div id="menuBtn">
+            <img src="image/menu.png" id="menu">
+        </div> -->
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right ="0";
+                    menu.src = "image/close.png";
+                }
+                else{
+                    sideNav.style.right ="-250px";
+                    menu.src = "image/menu.png";
+                }
+            }
+        </script>
+        <!-- Navigation End -->
+        <!-- Feature -->
+        <!-- <div class="whyus" id="whyus">
+            <section id="feature">
+                <div class="title-text">
+                    <p> Features</p>
+                    <h1>Why choose us</h1>
+                </div>
+                <div class="feature-box">
+                    <div class="features">
+                        <h1> Experienced Staff</h1>
+                    </div>
+                </div>
+            </section>
+        </div> -->
+
+        
+
+        <!-- Might remove everything below this -->
+        <!-- <div id="body" class="body">
             <div id="appointment" class="appointment">
                 <div id="marquee-appointment" class="marquee-appointment">
                     <marquee>"Please contact 8897476763 for free home collection"</marquee>
@@ -50,13 +120,14 @@
             <div id="contact_div" class="contact_div">
                 <p id="contact_p" class="contact_p">Reach out to us on: 8897476763 or write to us at adarshlab@gmail.com or find us 
                     <a href="https://goo.gl/maps/rAkBnexzrBnA1eAdA">at:</a> </p>
-            </div>
+            </div> -->
             <div id="map">
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d14245.442453556456!2d84.499957!3d26.796644!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39936e9792a17e0f%3A0xa94c20a3d8f700eb!2sAdarsh%20Laboratory%2C%20Hospital%20Rd%2C%20Kali%20Bagh%20Colony%2C%20Bettiah%2C%20Bihar%20845438!3m2!1d26.796643999999997!2d84.499957!5e0!3m2!1sen!2sin!4v1613751383573!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+                <div style="width: 100%;"><iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d14245.442453556456!2d84.499957!3d26.796644!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39936e9792a17e0f%3A0xa94c20a3d8f700eb!2sAdarsh%20Laboratory%2C%20Hospital%20Rd%2C%20Kali%20Bagh%20Colony%2C%20Bettiah%2C%20Bihar%20845438!3m2!1d26.796643999999997!2d84.499957!5e0!3m2!1sen!2sin!4v1613751383573!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
                 <!-- https://goo.gl/maps/rAkBnexzrBnA1eAdA -->
-                <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Hospital%20Road,%20Bettiah,%20Bihar,%20India+(Adarsh%20Laboratory)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <!-- <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Hospital%20Road,%20Bettiah,%20Bihar,%20India+(Adarsh%20Laboratory)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> -->
             </div>
-        </div>
+        <!-- </div> --> -->
     </div>
+    <!-- Google map frame, not to be removed -->
     <!-- <div style="width: 80%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Hospital%20Road,%20Bettiah,%20Bihar,%20India+(Adarsh%20Laboratory)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div> -->
 </html>
